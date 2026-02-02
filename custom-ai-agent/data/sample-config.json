@@ -1,0 +1,26 @@
+{
+  "agent": {
+    "name": "Custom AI Agent",
+    "version": "1.0.0",
+    "createdAt": "2026-02-01T11:13:47.779Z",
+    "description": "A customizable AI agent for various tasks"
+  },
+  "skills": [
+    "web_search",
+    "file_operations",
+    "code_generation",
+    "task_management",
+    "memory_management"
+  ],
+  "config": {
+    "server": {
+      "port": 3000,
+      "host": "0.0.0.0"
+    },
+    "features": {
+      "memory": true,
+      "learning": true,
+      "multiChannel": true
+    }
+  }
+}

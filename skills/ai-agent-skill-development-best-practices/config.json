@@ -1,0 +1,28 @@
+{
+  "name": "ai-agent-skill-development-best-practices",
+  "version": "1.0.0",
+  "description": "提供AI代理技能开发最佳实践的指南和建议",
+  "author": "OpenClaw Agent",
+  "license": "MIT",
+  "tags": [
+    "ai",
+    "development",
+    "best-practices",
+    "guidelines",
+    "coding",
+    "architecture"
+  ],
+  "dependencies": [],
+  "files": [
+    "SKILL.md"
+  ],
+  "entryPoints": {
+    "main": "SKILL.md"
+  },
+  "metadata": {
+    "category": "development",
+    "complexity": "intermediate",
+    "created": "2026-02-01T12:44:30.000Z",
+    "updated": "2026-02-01T12:44:30.000Z"
+  }
+}

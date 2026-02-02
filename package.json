@@ -1,0 +1,51 @@
+{
+  "name": "token-optimizer",
+  "version": "1.0.0",
+  "description": "AI Token Cost Optimization Solution - Reduce AI service costs by 20-70% while maintaining quality",
+  "main": "lib/index.js",
+  "scripts": {
+    "analyze": "node scripts/analyze_costs.mjs",
+    "optimize": "node scripts/optimize.mjs",
+    "report": "node scripts/report.mjs",
+    "monitor": "node lib/monitor.js",
+    "test": "jest",
+    "docs": "jsdoc -c jsdoc.conf.json"
+  },
+  "keywords": [
+    "ai",
+    "token",
+    "cost-optimization",
+    "gpt",
+    "claude",
+    "gemini",
+    "llm",
+    "artificial-intelligence",
+    "cost-saving"
+  ],
+  "author": "AI Token Optimizer Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.5",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.50.0",
+    "jsdoc": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/token-optimizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/token-optimizer/issues"
+  },
+  "homepage": "https://github.com/your-username/token-optimizer#readme"
+}

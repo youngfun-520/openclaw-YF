@@ -1,0 +1,31 @@
+{
+  "optimizer": {
+    "minCompressionRatio": 0.2,
+    "maxContextLength": 128000,
+    "preferredModels": [
+      "gpt-3.5-turbo",
+      "claude-3-haiku",
+      "gemini-flash"
+    ],
+    "costThreshold": 0.01,
+    "compressionAlgorithm": "context-aware"
+  },
+  "monitoring": {
+    "pollingInterval": 30000,
+    "reportInterval": 300000,
+    "enableAlerts": true,
+    "alertThreshold": 0.2
+  },
+  "caching": {
+    "enabled": true,
+    "ttl": 3600,
+    "maxSize": 1000,
+    "strategy": "LRU"
+  },
+  "logging": {
+    "level": "info",
+    "file": "./logs/optimizer.log",
+    "maxFileSize": "10MB",
+    "maxFiles": 10
+  }
+}

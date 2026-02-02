@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  custom-ai-agent:
+    build: .
+    container_name: custom-ai-agent
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      - ./config:/app/config
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./skills:/app/skills
+    restart: unless-stopped
+    networks:
+      - ai-agent-net
+
+  # 可选：添加Redis缓存服务
+  redis:
+    image: redis:7-alpine
+    container_name: ai-agent-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - ai-agent-net
+
+networks:
+  ai-agent-net:
+    driver: bridge
+
+volumes:
+  redis-data:
